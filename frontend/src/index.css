@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f8fafc 0%, #f7b267 40%, #f4845f 100%);
+  color: #22223b;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  transition: background 0.5s;
+}
+a {
+  text-decoration: none;
+  color: #5f6fff;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #22223b;
+}
+.app {
+  width: 90%;
+  margin: 40px auto 0 auto;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(244, 132, 95, 0.15);
+  padding: 32px 24px 24px 24px;
+  animation: fadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #f4845f33;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: box-shadow 0.3s, transform 0.3s;
+  box-shadow: 0 2px 8px rgba(31, 38, 135, 0.08);
+}
+.card-hover:hover {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  transform: translateY(-6px) scale(1.03);
+}
+
+/* Button style */
+button, .btn {
+  background: linear-gradient(90deg, #f4845f 0%, #f7b267 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(244, 132, 95, 0.08);
+  transition: background 0.3s, transform 0.2s;
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg, #f7b267 0%, #f4845f 100%);
+  transform: scale(1.04);
+}
+
+/* Smooth section fade-in */
+.section-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: sectionFadeIn 1s forwards;
+}
+@keyframes sectionFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Nice scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f7b267;
+}
+::-webkit-scrollbar-thumb {
+  background: #f4845f;
+  border-radius: 8px;
+}

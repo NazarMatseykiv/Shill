@@ -1,0 +1,43 @@
+.favorites-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.favorites-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.favorites-empty {
+  text-align: center;
+  color: #888;
+}
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.favorites-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px 24px;
+  justify-items: center;
+  align-items: stretch;
+  background: transparent;
+  padding: 8px 0 8px 0;
+}
+.favorites-list .food-item {
+  width: 100%;
+  max-width: 210px;
+  min-width: 170px;
+  margin: 0;
+  border: 1.5px solid #eee;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px 0 rgba(244,132,95,0.08);
+  background: #fff;
+  transition: box-shadow 0.2s, border 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

@@ -1,0 +1,28 @@
+.dish-search-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.dish-search-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #2d2d2d;
+}
+.dish-search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.dish-search-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
